@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MyLibModule } from '@my/lib';
+import { MotableModule } from 'motable';
 
 @NgModule({
   declarations: [
@@ -13,8 +12,7 @@ import { MyLibModule } from '@my/lib';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    MyLibModule.forRoot()
+    MotableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
