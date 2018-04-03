@@ -1,28 +1,19 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FooComponent } from './foo/foo.component';
-import { BarService } from './bar/bar.service';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {MotableComponent} from './motable.component';
+import {DragulaModule} from 'ng2-dragula';
+import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    NgxDatatableModule,
+    DragulaModule
   ],
-  declarations: [
-    FooComponent
-  ],
-  exports: [
-    FooComponent
-  ]
+  exports: [MotableComponent],
+  declarations: [MotableComponent]
 })
-export class MyLibModule {
 
-  public static forRoot(): ModuleWithProviders {
+export class MotableModule {
 
-    return {
-      ngModule: MyLibModule,
-      providers: [
-        BarService
-      ]
-    };
-  }
 }
