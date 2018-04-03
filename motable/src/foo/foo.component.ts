@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-foo',
+  selector: 'motable',
   template: '<h1>foo</h1>',
   styleUrls: ['./foo.component.scss']
 })
