@@ -3,7 +3,7 @@ import {DragulaService} from 'ng2-dragula';
 import {DatatableComponent} from '@swimlane/ngx-datatable';
 
 @Component({
-  selector: 'app-motable',
+  selector: 'motable',
   templateUrl: './motable.component.html',
   styleUrls: ['./motable.component.css']
 })

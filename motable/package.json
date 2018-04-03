@@ -1,6 +1,6 @@
 {
   "name": "motable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Phodal HUANG <h@phodal.com>",
   "repository": {
     "type": "git",
@@ -9,12 +9,15 @@
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^5.0.0",
-    "@angular/core": "^5.0.0",
+    "@angular/core": "^5.0.0"
+  },
+  "dependencies": {
     "@swimlane/ngx-datatable": "^11.2.0",
     "ng2-dragula": "^1.5.0"
   },
   "ngPackage": {
     "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+    "whitelistedNonPeerDependencies": ["."],
     "dest": "../dist/motable",
     "workingDirectory": "../.ng_build",
     "lib": {
